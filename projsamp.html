@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historic Places in Pune</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<style>
+    body {
+        background-color: #f5f0e1;
+    }
+
+    .jumbotron {
+        position: relative;
+        background-color: #1e3d59;
+        color: #ffffff;
+        overflow: hidden;
+    }
+
+    .header-image {
+        background-image: url('images/pune1.jpg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .header-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .card {
+        background-color: whitesmoke;
+        border: 1px solid white;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-footer {
+        background-color: whitesmoke;
+    }
+
+
+    .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 150px; /* Set the desired height for the image */
+            object-fit: cover;
+        }
+</style>
+
+<body>
+<?php
+	include("connect.php");
+?>
+
+    <header class="jumbotron text-center">
+        <div class="header-image"></div>
+        <div class="header-content">
+            <h1 class="display-4"><strong>ℍ𝕀𝕊𝕋𝕆ℝ𝕀ℂ ℙ𝕃𝔸ℂ𝔼𝕊 𝕀ℕ ℙ𝕌ℕ𝔼</strong></h1>
+            <p class="lead">Explore the rich history and culture of Pune through its historic landmarks.</p>
+        </div>
+    </header>
+
+    <style>
+        .cid-u1HNc4fqaz {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            background-color: #ffffff;
+        }
+
+        .cid-u1HNc4fqaz .mbr-text {
+            color: #000000;
+        }
+
+        .cid-u1HNc4fqaz .mbr-section-subtitle {
+            color: #000000;
+        }
+
+        .cid-u1HNc4fqaz .mbr-section-title {
+            color: #000000;
+            text-align: center;
+        }
+    </style>
+    <section class="article12 cid-u1HNc4fqaz" id="generic-text-6-u1HNc4fqaz">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                    <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-2">
+                        <strong>Explore Pune&#x27;s Heritage</strong>
+                    </h3>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Immerse yourself in the captivating history of Pune and discover the timeless beauty of its
+                        historic landmarks.
+                    </p>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        With PuneCity as your guide, you&#x27;ll embark on a journey through the ages, uncovering the
+                        stories and legends that have shaped the city&#x27;s cultural identity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/shani.jpg" class="card-img-top" alt="Shaniwar Wada">
+                    <div class="card-body">
+                        <h5 class="card-title">Shaniwar Wada</h5>
+                        <p class="card-text">A historical fortification in the city of Pune.This was built by Peshwas.
+                        </p>
+                    </div>
+                    <div class="card-footer  d-flex justify-content-between align-items-center">
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#shaniwarWadaModal">Read
+                            More</a>
+                        <a href="https://www.google.com/maps?q=Shaniwar+Wada,Pune" class="btn btn-success"
+                            target="_blank" style="background-color: #ffffff; border: whitesmoke;"> <img
+                                src="images/gmm.jpg" alt="Google Maps" height="32" width="32"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/agp.jpg" class="card-img-top" alt="Aga Khan Palace" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Aga Khan Palace</h5>
+                        <p class="card-text">A palace built by Sultan Muhammed Shah Aga Khan III in Pune.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#agaKhanPalaceModal">Read
+                            More</a>
+                        <a href="https://www.google.com/maps?q=Aga+Khan+Palace,Pune" class="btn btn-success"
+                            target="_blank" style="background-color: #ffffff; border: whitesmoke;">
+                            <img src="images/gmm.jpg" alt="Google Maps" height="32" width="32">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/lal-mahal.jpg" class="card-img-top" alt="Lal Mahal" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Lal Mahal</h5>
+                        <p class="card-text">A historic palace in Pune, originally constructed by Shivaji Maharaj.</p>
+                    </div>
+                    <div class="card-footer  d-flex justify-content-between align-items-center">
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#lalMahalModal">Read
+                            More</a>
+                        <a href="https://www.google.com/maps?q=Lal+Mahal,Pune" class="btn btn-success" target="_blank"
+                            style="background-color: #ffffff; border: whitesmoke;"> <img src="images/gmm.jpg"
+                                alt="Google Maps" height="32" width="32"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--  sinhagadh fort-->
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/sinhagadhhd.jpg" class="card-img-top" alt="Sinhagad" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Sinhagad Fort</h5>
+                        <p class="card-text">A historic palace in Pune, originally constructed by Shivaji Maharaj.</p>
+                    </div>
+                    <div class="card-footer  d-flex justify-content-between align-items-center">
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#sinhagadhModal">Read
+                            More</a>
+                        <a href="" class="btn btn-success" target="_blank"
+                            style="background-color: #ffffff; border: whitesmoke;"> <img src="images/gmm.jpg"
+                                alt="Google Maps" height="32" width="32"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--pataleshwar caves-->
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/pataleshwar.avif" class="card-img-top" alt="Pataleshwar" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Pataleshwar Cave</h5>
+                        <p class="card-text">
+
+                            Constructed in the 8th century, the glorious Paraleshwar cave temple presents an iconic
+                            narration to the rich history of India.</p>
+                    </div>
+                    <div class="card-footer  d-flex justify-content-between align-items-center">
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#pataleshwarModal">Read
+                            More</a>
+                        <a href="https://maps.app.goo.gl/fiMKi29LP71SwB36A" class="btn btn-success" target="_blank"
+                            style="background-color: #ffffff; border: whitesmoke;"> <img src="images/gmm.jpg"
+                                alt="Google Maps" height="32" width="32"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--vishrambaugh-->
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/vishram.jpg" class="card-img-top" alt="Vishrambaug Wada" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Vishrambaug Wada</h5>
+                        <p class="card-text">
+                            Vishrambaag Wada, a fine mansion situated at central Pune's Thorale Bajirao Road.
+
+                        </p>
+                    </div>
+                    <div class="card-footer  d-flex justify-content-between align-items-center">
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#vishrambaugModal">Read
+                            More</a>
+                        <a href="https://maps.app.goo.gl/wvvLJLfsFCZiMocN6" class="btn btn-success" target="_blank"
+                            style="background-color: #ffffff; border: whitesmoke;"> <img src="images/gmm.jpg"
+                                alt="Google Maps" height="32" width="32"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>l 
+    </div>
+
+    <hr>
+     <center><button><a href="page2.html">Read More</a></button></center>
+    <br>
+    
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Modal for Shaniwar Wada -->
+    <div class="modal fade" id="shaniwarWadaModal" tabindex="-1" role="dialog" aria-labelledby="shaniwarWadaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shaniwarWadaModalLabel">Shaniwar Wada</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Shaniwar Wada is a historic fortification located in Pune, India. Built in 1732, it served as the
+                        seat of the Peshwas of the Maratha Empire until 1818. The fort complex, known for its impressive
+                        architecture, once housed a grand palace, courtyards, and gardens. Today, it stands as a
+                        significant historical landmark, attracting visitors with its rich history and captivating
+                        ruins.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Aga Khan Palace -->
+    <div class="modal fade" id="agaKhanPalaceModal" tabindex="-1" role="dialog"
+        aria-labelledby="agaKhanPalaceModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agaKhanPalaceModalLabel">Aga Khan Palace</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Aga Khan Palace is a palace in Pune, India, built by Sultan Muhammed Shah Aga Khan III in 1892.
+                        The palace is closely associated with the Indian freedom movement, as it served as a prison for
+                        Mahatma Gandhi and other leaders. Today, it stands as a memorial to Gandhi and a symbol of
+                        India's struggle for independence.</p>
+                    <!-- Add more information as needed -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Lal Mahal -->
+    <div class="modal fade" id="lalMahalModal" tabindex="-1" role="dialog" aria-labelledby="lalMahalModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lalMahalModalLabel">Lal Mahal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lal Mahal, or the Red Palace, is a historic palace in Pune, Maharashtra. It was originally
+                        constructed by Shivaji Maharaj for his wife Saibai. The palace has witnessed significant events
+                        in Maratha history. Though the current structure is a reconstruction, it remains a popular
+                        tourist attraction
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal for sinhagadh fort-->
+
+    <div class="modal fade" id="sinhagadhModal" tabindex="-1" role="dialog" aria-labelledby="sinhagadhModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sinhagadhModalModalLabel">Shaniwar Wada</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Sinhagad Fort, located near Pune, India, has a rich history dating back to the 17th century.
+                        Originally known as Kondana Fort, it has witnessed several battles, including the famous Battle
+                        of Sinhagad in 1670. The fort offers panoramic views of the surrounding landscape and houses
+                        historical structures like the Kalyan Darwaza and Tanaji Malusare's tomb. It's a popular
+                        trekking destination and a symbol of Maratha valor.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--modal for pataleshwar fort-->
+
+    <div class="modal fade" id="pataleshwarModal" tabindex="-1" role="dialog" aria-labelledby="pataleshwarModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pataleshwarModalLabel">Pataleshwar Cave</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Pataleshwar Cave Temple offers an interesting glimpse of rock-cut architecture in India and
+                        dedicated to Lord Shiva and Nandi. At the main shrine of the temple, pilgrims pay their respect
+                        to the imposing Shiva lingam which is built there. One of the astounding features of Pataleshvar
+                        Cave Temple is that its construction was never completed and thus one can witness that there is
+                        no specific entrance to the temple. Pataleshwar Cave Temple is a great visit both for spiritual
+                        reasons and appreciating the art and culture the region.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--modal for vishrambaug-->
+
+    <div class="modal fade" id="vishrambaugModal" tabindex="-1" role="dialog" aria-labelledby="vishrambaugModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vishrambaugModalLabel">Vishrambaag Caves</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Vishrambaag Wada, a fine mansion situated at central Pune's Thorale Bajirao Road, was the
+                        luxurious residence of Peshwa Baji Rao II, the last Peshwa of Maratha confederacy, in early 19th
+                        century. The 20,000 sq.ft. wada presently houses a post office on its ground floor, a few other
+                        offices of the municipal corporation and a small museum of Maratha artifacts put together by
+                        noted Maratha historian, Babasaheb Purandare.[1] This structure is famous for its fine entrance
+                        and the balcony with carved woodwork</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .gallery-image img {
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-image img:hover {
+            transform: scale(1.1);
+        }
+
+        .images-section {
+            background-color: white;
+            padding: 200px;
+            /* Adjust padding as needed */
+        }
+
+        .gallery-image img {
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-image img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <section class="gallery1 mbr-gallery cid-u1HNc4fmzY" id="gallery-10-u1HNc4fmzY">
+        <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-2 text-center">
+            <strong>🇵​​🇺​​🇳​​🇪​❜​🇸​ ​🇵​​🇭​​🇴​​🇹​​🇴​ ​🇬​​🇦​​🇱​​🇱​​🇪​​🇷​​🇾​</strong>
+        </h3>
+        <div class="container-fluid">
+            <div class="row mbr-gallery">
+
+                <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                    <div class="item-wrapper mb-3">
+                        <img class="w-100 rounded" src="images/p1.png" height="228px" alt="Image 1">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                    <div class="item-wrapper mb-3">
+                        <img class="w-100 rounded" src="images/p2.jpg" height="228px" alt="Image 2">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                    <div class="item-wrapper mb-3">
+                        <img class="w-100 rounded" src="images/p3.jpg" height="228px" alt="Image 3">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                    <div class="item-wrapper mb-3">
+                        <img class="w-100 rounded" src="images/p4.jpg" height="228px" alt="Image 4">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                    <div class="item-wrapper mb-3">
+                        <img class="w-100 rounded" src="images/p5.jpg" height="228px" alt="Image 5">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                    <div class="item-wrapper mb-3">
+                        <img class="w-100 rounded" src="images/p6.png" height="228px" alt="Image 6">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                    <div class="item-wrapper mb-3">
+                        <img class="w-100 rounded" src="images/p7.webp" height="228px" alt="Image 7">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 item gallery-image">
+                    <div class="item-wrapper mb-3">
+                        <img class="w-100 rounded" src="images/p8.webp" height="228px" alt="Image 8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .cid-u1HNc4gclw {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            background-color: rgba(128, 128, 0, 0.142);
+        }
+
+        .cid-u1HNc4gclw .form-container {
+            background-color: sandybrown;
+            border-radius: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .cid-u1HNc4gclw form .mbr-section-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cid-u1HNc4gclw form .mbr-section-btn .btn {
+            display: inline-flex;
+            background-color: maroon;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cid-u1HNc4gclw form .mbr-section-btn .btn:hover {
+            background-color: brown;
+        }
+
+        .content-head {
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            border-radius: 20px;
+        }
+    </style>
+
+    <section class="form5 cid-u1HNc4gclw" id="contact-form-2-u1HNc4gclw">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 content-head">
+                    <div class="mbr-section-head mb-5">
+                        <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                            <strong>Get in Touch</strong>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+				
+				
+                  <form method="POST" action="http://localhost/Final/connect.php">
+    <div class="col-md col-sm-12 form-group mb-3">
+        <input type="text" name="name" placeholder="Name" class="form-control" id="name" required>
+    </div>
+
+    <div class="col-md col-sm-12 form-group mb-3">
+        <input type="email" name="email" placeholder="Email" class="form-control" id="email" required>
+    </div>
+
+    <div class="col-12 form-group mb-3">
+        <textarea name="message" placeholder="Message" class="form-control" id="textarea" required></textarea>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+        <input type="submit" name="submit" value="Send Message" class="btn btn-primary display-7">
+    </div>
+</form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .cid-u1HNc4gDTZ {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            background: transparent;
+        }
+
+        .cid-u1HNc4gDTZ .mbr-fallback-image.disabled {
+            display: none;
+        }
+
+        .cid-u1HNc4gDTZ .mbr-fallback-image {
+            display: block;
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        @media (max-width: 992px) {
+            .cid-u1HNc4gDTZ .row .map-wrapper {
+                margin-top: 2rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .cid-u1HNc4gDTZ .row .map-wrapper {
+                margin-top: 1rem;
+            }
+        }
+
+        .cid-u1HNc4gDTZ .google-map {
+            height: 100%;
+            position: relative;
+        }
+
+        .cid-u1HNc4gDTZ .google-map iframe {
+            height: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: 992px) {
+            .cid-u1HNc4gDTZ .google-map iframe {
+                min-height: 350px;
+            }
+        }
+
+        .cid-u1HNc4gDTZ .google-map [data-state-details] {
+            color: #6b6763;
+            height: 1.5em;
+            margin-top: -0.75em;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 100%;
+        }
+
+        .cid-u1HNc4gDTZ .google-map[data-state] {
+            background: #e9e5dc;
+        }
+
+        .cid-u1HNc4gDTZ .google-map[data-state="loading"] [data-state-details] {
+            display: none;
+        }
+
+        .cid-u1HNc4gDTZ .card-wrapper {
+            padding: 2.25rem;
+            background: #ffffff;
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            .cid-u1HNc4gDTZ .card-wrapper {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .cid-u1HNc4gDTZ .card-wrapper {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        .cid-u1HNc4gDTZ ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cid-u1HNc4gDTZ .content-head {
+            max-width: 800px;
+        }
+    </style>
+    <section class="contacts02 map1 cid-u1HNc4gDTZ" id="contacts-2-u1HNc4gDTZ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 content-head">
+                    <div class="mbr-section-head mb-5">
+                        <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                            <strong>Contact Us</strong>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="card col-12 col-md-12 col-lg-6">
+                    <div class="card-wrapper">
+                        <div class="text-wrapper">
+                            <ul class="list mbr-fonts-style display-7">
+                                <li class="mbr-text item-wrap">WhatsApp: <a href="tel:+91 9307690090"
+                                        class="text-black">+91 9307690090</a></li>                            
+                                <li class="mbr-text item-wrap">Email: <a href="mailto:anshumankalbhor.rmdstic.comp@gmail.com"
+                                        class="text-black">anshumankalbhor.rmdstic.comp@gmail.com</a></li>
+                                <li class="mbr-text item-wrap">Address: Rmd Sinhgad , Warje , Pune, India</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-wrapper col-md-12 col-lg-6">
+                    <div class="google-map"><iframe frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?key&#x3D;AIzaSyCt1265A4qvZy9HKUeA8J15AOC4SrCyZe4&amp;q&#x3D;Pune%20city%20India"
+                            allowfullscreen=""></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .cid-u1HNc4g8Xs {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            background-color: #1e3d59d7;
+        }
+
+        .cid-u1HNc4g8Xs .social-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .cid-u1HNc4g8Xs .social-row .soc-item {
+            margin: 8px;
+        }
+
+        .cid-u1HNc4g8Xs .social-row .soc-item a:hover .mbr-iconfont,
+        .cid-u1HNc4g8Xs .social-row .soc-item a:focus .mbr-iconfont {
+            background-color: #ffffff;
+        }
+
+        .cid-u1HNc4g8Xs .social-row .soc-item a .mbr-iconfont {
+            width: 72px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            font-size: 32px;
+            background-color: #edefeb;
+            color: rgba(165, 42, 42, 0.749);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .cid-u1HNc4g8Xs .row-links {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .cid-u1HNc4g8Xs .header-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        .cid-u1HNc4g8Xs .header-menu li {
+            padding: 0 1rem 1rem 1rem;
+        }
+
+        .cid-u1HNc4g8Xs .header-menu li p {
+            margin: 0;
+        }
+
+        .cid-u1HNc4g8Xs .copyright {
+            margin-bottom: 0;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .cid-u1HNc4g8Xs .mbr-section-title {
+            color: #ffffff;
+        }
+    </style>
+    <section class="footer3 cid-u1HNc4g8Xs" once="footers" id="footer-3-u1HNc4g8Xs">
+        <div class="">
+            <div class="row">
+                <div class="row-links">
+                    <ul class="header-menu">
+                        <li class="header-menu-item mbr-fonts-style display-5">
+                            <a href="#" class="text-white">Home</a>
+                        </li>
+                        <li class="header-menu-item mbr-fonts-style display-5">
+                            <a href="#" class="text-white">About</a>
+                        </li>
+                        <li class="header-menu-item mbr-fonts-style display-5">
+                            <a href="#" class="text-white">Contact</a>
+                        </li>
+                        <li class="header-menu-item mbr-fonts-style display-5">
+                            <a href="#" class="text-white">Explore</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <div class="social-row">
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+
+                                <img src="images/fb.webp" alt="Facebook" class="mbr-iconfont">
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <img src="images/ig.webp" alt="Instagram" class="mbr-iconfont">
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <img src="images/twi.png" alt="Twitter" class="mbr-iconfont">
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <img src="images/in.png" alt="Linkedin" class="mbr-iconfont">
+                            </a>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 mt-5">
+                    <p class="mbr-fonts-style copyright display-7">
+                        © 2024 PuneCity. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
