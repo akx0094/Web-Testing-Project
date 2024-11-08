@@ -19,4 +19,4 @@ This project focuses on automating the testing of critical website features—lo
   1.install selenium using pip install selenium command.
   2.place this folder in path:C:\xampp\htdocs\ 
   3.open command prompt and navigate to particular folder.
-  4.use command : python <filename.py> to run this project.
+  4.use command : python <filename.py> (test_code.py,test2.py) to run this project.
